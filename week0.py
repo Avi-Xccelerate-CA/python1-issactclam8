@@ -11,8 +11,8 @@
 # input: [500, 1, 2, 3, 4, 5]
 #expected output: "No medicine given"
 # HINT: using % operator to find remainder may be helpful
-def dose(needs):
+#def dose(needs):
     #YOUR SOLUTION STARTS HERE
-
+print("abc")
     #YOUR SOLUTION ENDS HERE
 
