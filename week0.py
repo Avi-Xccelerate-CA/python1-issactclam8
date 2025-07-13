@@ -11,8 +11,27 @@
 # input: [500, 1, 2, 3, 4, 5]
 #expected output: "No medicine given"
 # HINT: using % operator to find remainder may be helpful
-#def dose(needs):
+def dose(needs):
     #YOUR SOLUTION STARTS HERE
-print("abc")
-    #YOUR SOLUTION ENDS HERE
+    total_needs = sum(needs)
 
+    if total_needs > 500:
+        return "No medicine given"
+    
+    medicine_list =[]
+    vitamins = 0
+    attribute = 0
+    for attribute in needs:
+        if attribute >= 250:
+            return "No medicine given"
+        vitamins = attribute //10
+
+        if attribute % 10 !=0:
+            vitamins +=1
+        injections = vitamins*10 - attribute
+        print(injections, vitamins)
+        medicine_list.append((vitamins, injections))
+
+    return medicine_list
+
+    #YOUR SOLUTION ENDS HERE
